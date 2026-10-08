@@ -3,18 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivian Nganga 🎶💕</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body style="background-color: #b47644d0;">
-     <h1 style='color: #369661d0;'>Vivian Nganga 💕🗼</h1>
-<p id="p1" class="odd">My name is Vivian Nganga and I am a student at Strathmore University. I am currently pursuing a degree in Computer Science. I have a passion for technology and I am always looking for new ways to learn and grow. I am also interested in music and I enjoy playing the guitar and singing. In my free time, I like to read, watch movies, and spend time with my friends and family.</p>
-<p id="p2" class="odd">lorem ipsum dolor sit amet</p>
-<p id="p3" class="even">lorem ipsum dolor sit amet</p>
-<p id="p4" class="even">lorem ipsum dolor sit amet</p>
-    
+    <title>Document</title>
+    <style>
+        :root {
+            --bg: #f6f8fb;
+            --card: #ffffff;
+            --primary: #0f766e;
+            --accent: #14b8a6;
+            --text: #1f2937;
+            --muted: #475569;
+            --border: #dfe7ee;
+            --shadow: rgba(15, 23, 42, 0.08);
+        }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #f4fbff 0%, #eef7f5 100%);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 0.7rem;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--muted);
+        }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ol, ul {
+            padding-left: 1.5rem;
+        }
+
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+            box-shadow: 0 8px 22px var(--shadow);
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--text);
+            outline: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 1rem 0;
+            display: block;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.75rem 0.85rem;
+            text-align: left;
+        }
+
+        th {
+            background: #ecfeff;
+            color: var(--primary);
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 14px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <h1>🌎Travel World</h1>
+
+    <h3>A 3-day travel guide to Mombasa with an itinerary and budget.</h3>
+
+    <h1>Discover Mombasa: A 3-Day Travel Guide</h1>
+
+    <p class="">Sun, sand, history and the best Swahili food on the Kenyan coast.</p>
+
+    <h2><strong>Contents</strong></h2>
+    <ol>
+        <li><a href="#day1">Day 1: Historical Mombasa</a></li>
+        <li><a href="#day2">Day 2: Beach Day</a></li>
+        <li><a href="#day3">Day 3: Beach & Relaxation</a></li>
+        <li><a href="#budget">Budget Planner</a></li>
+        <li><a href="#packing">Packing Checklist</a></li>
+        <li><a href="#tips">Travel Tips</a></li>
+    </ol>
+
+    <ol><strong></strong><li><h2 id="Getting There">Getting There</h2></li></strong></ol>
+    <p> You can reach Mombasa from Nairobi in three main ways:</p>
+    <ul>
+        <li><strong>By train</strong>-the SGR Madaraka Express (about 5 hours)</li>
+        <ul>
+            <li>Economy class</li>
+            <li>First class</li>
+        </ul>
+        <li><strong>By air</strong>- 1 hour to Moi International Airport</li>
+        <li><strong>By road</strong>-about 8 hours by bus or car </li>
+
+        <li><h2 id="The 3-day Itinerary">The 3-Day Itinerary</h2></li>
+
+    <details>
+        <summary><strong>Day 1: History & Old Town🗼 </strong></summary>
+
+        <img src="data:image/jpeg;base64,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" alt="fort jesus" width="280" height="170">
+        <p>Fort Jesus was built by the Portugese in 1593.</p>
+
+        <ol>
+            <li><Morning:Visit></li>
+        href="https://www.https://www.google.com/imgres?q=fort%20jesus&imgurl=https%3A%2F%2Fi0.wp.com%2Fwww.paukwa.or.ke%2Fwp-content%2Fuploads%2F2021%2F07%2FImage-credit-PlanetWare-1.jpg%3Ffit%3D730%252C487%26ssl%3D1&imgrefurl=https%3A%2F%2Fwww.paukwa.or.ke%2Fstory-series%2Fkeheritagesites%2Ffort-jesus%2F&docid=1VjcREK7Sa0DCM&tbnid=3dpNk-Z37DabCM&vet=12ahUKEwjigb35zZ6XAxXv8LsIHR90JN0QnPAOegUIpwEQAA..i&w=730&h=487&hcb=2&ved=2ahUKEwjigb35zZ6XAxXv8LsIHR90JN0QnPAOegUIpwEQAA" target="_blank">Fort Jesus Museum</a></li>
+            <li>Lunch: Biryani at a local restaurant</li>
+            <li>3. Afternoon: Walking tour of Old Town</li>
+
+            <ul><li>Mombasa Old Port</li>
+                <li>Spice market</li>
+                
+                <li>Swahili carved doors</li>
+
+            </ul>
+
+            <li>Evening:🌞 Sunset dhow cruise</li>
+
+        </ol>
+
+    </details>
+
+    <details><summary><strong>Day 2: Beach Day</strong></summary>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Tnpj59_ExorjeF-EU0SGYG4rRvLGiSJiicSffseAlw&s=10" alt="Diani Beach" width="280" height="170">
+        <p>Diani Beach – voted Africa's leading beach destination.</p>
+
+        <ol>
+            <li>Snorkeling at Marine Park</li>
+            <li>Lunch: Fresh seafood on the beach</li>
+            <li>Camel ride along the shore</li>
+
+         </ol>
+
+        </details>
+        <details><summary><strong>Day 3: Beach & Relaxation</strong></summary>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Tnpj59_ExorjeF-EU0SGYG4rRvLGiSJiicSffseAlw&s=10" alt="Diani Beach" width="280" height="170">
+            <p>Spend a slow day enjoying the coastline ,local seafood ,and a beach side sunset</p>
+        </details>
+
+        <li><h2 id="Budget Planner">Packing Checklist</h2></li>
+
+        <table border="1">
+            <th>item</th>
+            <th>Budget</th>
+            <th>Mid-range</th>
+            <th>luxury</th>
+
+            </th>
+            
+        </tr>
+        <td><strong>Transport (return)</strong></td>
+                <td>3,000</td>
+                <td>6,000</td>
+                <td>18,000</td>
+            </tr>
+
+        <tr>
+            <td><strong>Accommodation (2 nights)</strong></td>
+                <td>5,000</td>
+                <td>15,000</td>
+                <td>60,000</td>
+            </tr>
+            <tr><td><strong>Food</strong></td>
+                <td>3,000</td>
+                <td>6,000</td>
+                <td>15,000</td>
+            </tr>
+            <tr>
+                <td><strong>Activities</strong></td>
+                <td>Varies:2,000-10,000</td>
+            </tr>
+
+            <tr>
+                <td><strong>Total (approx.)</strong></td>
+                <td>13,000</td>
+                <td>33,000</td>
+                <td>103,000</td>
+
+
+          </table>
+
+        </details>
+
+        <li><h2 id="Packing Checklist">Packing Checklist</h2></li>
+
+        <p>
+        <b>Clothing</b><br
+            <p>Light cotton clothes, swimwear, a hat, sandals
+
+            </p>
+        <p>>
+        <b>Health</b><br
+               <p>Sunscreen (SPF 50), insect repellent, water bottle
+
+               </p>
+            <p>
+        <b>Documents</b><br>
+              <p>National ID or passport, tickets, booking confirmations
+
+              </p>
         
+        <li><h2 id="Travel Tips">Travel Tips</h2></li>
+
+           <p>"Pole pole" – slowly, slowly. Life at the coast moves at a relaxed pace, so enjoy it! </p>
+
+           <ul>
+             <li>Learn a few Swahili words: Jambo (Hello), Asante (Thank you), Karibu (Welcome).</li>
+             <li>Best time to visit: July to October and January to March.</li>
+             <li>Always dress modestly in Old Town.</li>
+
+           </ul>
+           
+
+
+
     
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+       
+        
+    </ul>
 </body>
 </html>
